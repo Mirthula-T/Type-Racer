@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQ-TypeRacer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TypeRacer</h1>
+        <div class="stats">
+            <p>Timer: <span id="timer">0s</span></p>
+        </div>
+        <div id="quote">
+            <p id="passage-text">This is a typing test passage. Try to type it as fast and as accurately as you can!</p>
+        </div>
+        <div id="quote">
+            <textarea name="quotes" id="quote-input" placeholder="Type here" disabled></textarea>
+        </div>
+        <button id="start-test" onclick="startTest()">Start Typing</button>
+        <button id="stop-test" onclick="stopTest()" style="display:none;">Submit</button>
+
+        <div class="result" style="display:none;">
+            <h3>Result</h3>
+            <div class="wrapper">
+                <p>Accuracy - <span id="acc"></span></p> 
+                <p>Speed - <span id="wpm"></span></p> 
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
